@@ -10,6 +10,7 @@ RUN pip3 install pandas
 RUN pip3 install matplotlib
 RUN pip3 install plotly
 RUN pip3 install seaborn
+RUN pip3 install fastparquet
 
 RUN useradd -ms /bin/bash jupyter
 USER jupyter

@@ -5,34 +5,39 @@
 
 In this documention, i will explain the dataset and the answers. First, i am going to implement the answer on jupyter notebook.
 
+## Questions:
+- cancellations and accommodation types are important business concepts
+
+- What are the most popular guest origin countries?
+- What is the room price per night?
+- How does the previous price vary throughout the year?
+- What is the distribution of guests per month?
+- For how long do guests book their stays?
 
 
 ## Features
 
-- 1
-- 2
+- 1 Data describetion and visualtion
+- 2 Docker implemention
 
 
-
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
 
 ## Tech
 
-I am useing a number of open source to solve this task:
+I have implemented the solution using Jupyter Notebook for better visualtion and descrbtion. The docker image will be share as private image on Docker Hub
 
 
 ## Installation
 
 
-Install the dependencies and devDependencie.
+I beleive docker already installed on your machine as mentiond in the task
 
 ```sh
 
 ```
 
-For production environments...
+No other installtion required
+
 
 ```sh
 
@@ -40,40 +45,10 @@ For production environments...
 
 ## Plugins
 
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-
+No Plugings for this task
 
 ## Development
 
-
-First Tab:
-
-```sh
-
-```
-
-Second Tab:
-
-```sh
-```
-
-#### Building for source
-
-For production release:
-
-```sh
-
-```
-
-Generating pre-built zip archives for distribution:
-
-```sh
-
-```
 
 ## Docker
 
@@ -83,19 +58,23 @@ Install and deploy in a Docker container.
 ```sh
 
 ```
+Steps to run the solution on Docker as follow:
 
+1 - Pull the image from //
+2 - type the command -> docker run -it -p 8888:8888 IMAGE_ID
 
 ```sh
 docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger
 ```
 
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
 
 Verify the deployment by navigating to your server address in
-your preferred browser.
+your preferred browser. All the solution inside app folder.
+
+Please click on answers.ipnb
 
 ```sh
-127.0.0.1:8000
+127.0.0.1:8888
 ```
 
 ## License
