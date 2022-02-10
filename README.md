@@ -1,104 +1,55 @@
 # Stay For Long Test
 ## Data Engineer
 
+In this document will find all the necessary requirements and steps to run my solution
 
+## Questions given from The team leader
 
-In this documention, i will explain the dataset and the answers. First, i am going to implement the answer on jupyter notebook.
+- Cancellations and accommodation types are important business concepts
+- What are the most popular guest origin countries?
+- What is the room price per night?
+- How does the previous price vary throughout the year?
+- What is the distribution of guests per month?
+- For how long do guests book their stays?
 
-
-
-## Features
-
-- 1
-- 2
-
-
-
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
 
 ## Tech
-
-I am useing a number of open source to solve this task:
+I done the solution using Python and Jupyter Notebook for better understanding and clear visualization. The implementation and deployment using Docker image
 
 
 ## Installation
+You only need docker to run the solution and as Mentioned in the document given by Stayforlong, Docker already installed
 
 
-Install the dependencies and devDependencie.
-
-```sh
-
-```
-
-For production environments...
-
-```sh
-
-```
-
-## Plugins
-
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-
-
-## Development
-
-
-First Tab:
-
-```sh
-
-```
-
-Second Tab:
-
-```sh
-```
-
-#### Building for source
-
-For production release:
-
-```sh
-
-```
-
-Generating pre-built zip archives for distribution:
-
-```sh
-
-```
 
 ## Docker
+Pull and run the solution from Docker. The image saved on my personal Dockerhub 
 
-Install and deploy in a Docker container.
-
-
+First: Pull the image
 ```sh
-
+docker pull noureddintb/stayforlong:latest
 ```
-
-
+Next: we need to get the IMAGE ID for noureddintb/stayforlong:latest image
 ```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger
+docker image ls
 ```
+Finally: Please run the command below to run jupyter Notebook and the find the solution copy inside the Docker image
+```sh
+docker run -it -p 8888:8888 IMAGE_ID
+```
+After running the docker image; you will see a link contains the local ip (127.0.0.1:8888) and token newly generated (token=....). 
 
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-Verify the deployment by navigating to your server address in
+Pleas copy the link to verify the deployment by navigating to your server address in
 your preferred browser.
 
 ```sh
-127.0.0.1:8000
+127.0.0.1:8888/?token=.....
 ```
+After opening Jupyter Notebook; you will find an folder named as app; Please click on it and after that you will find the answers saved inside ->   answers.ipynb. 
+Click on it and run the solution
 
 ## License
 
+Copy Right Stayforlong 
 
   

@@ -1,13 +1,11 @@
 # Stay For Long Test
 ## Data Engineer
 
+In this document will find all the necessary requirements and steps to run my solution
 
+## Questions given from The team leader
 
-In this documention, i will explain the dataset and the answers. First, i am going to implement the answer on jupyter notebook.
-
-## Questions:
-- cancellations and accommodation types are important business concepts
-
+- Cancellations and accommodation types are important business concepts
 - What are the most popular guest origin countries?
 - What is the room price per night?
 - How does the previous price vary throughout the year?
@@ -15,69 +13,43 @@ In this documention, i will explain the dataset and the answers. First, i am goi
 - For how long do guests book their stays?
 
 
-## Features
-
-- 1 Data describetion and visualtion
-- 2 Docker implemention
-
-
-
 ## Tech
-
-I have implemented the solution using Jupyter Notebook for better visualtion and descrbtion. The docker image will be share as private image on Docker Hub
+I done the solution using Python and Jupyter Notebook for better understanding and clear visualization. The implementation and deployment using Docker image
 
 
 ## Installation
+You only need docker to run the solution and as Mentioned in the document given by Stayforlong, Docker already installed
 
-
-I beleive docker already installed on your machine as mentiond in the task
-
-```sh
-
-```
-
-No other installtion required
-
-
-```sh
-
-```
-
-## Plugins
-
-No Plugings for this task
-
-## Development
 
 
 ## Docker
+Pull and run the solution from Docker. The image saved on my personal Dockerhub 
 
-Install and deploy in a Docker container.
+First: Pull the image
+```sh
+docker pull noureddintb/stayforlong:latest
+```
+Next: we need to get the IMAGE ID for noureddintb/stayforlong:latest image
+```sh
+docker image ls
+```
+Finally: Please run the command below to run jupyter Notebook and the find the solution copy inside the Docker image
+```sh
+docker run -it -p 8888:8888 IMAGE_ID
+```
+After running the docker image; you will see a link contains the local ip (127.0.0.1:8888) and token newly generated (token=....). 
 
+Pleas copy the link to verify the deployment by navigating to your server address in
+your preferred browser.
 
 ```sh
-
+127.0.0.1:8888/?token=.....
 ```
-Steps to run the solution on Docker as follow:
-
-1 - Pull the image from //
-2 - type the command -> docker run -it -p 8888:8888 IMAGE_ID
-
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger
-```
-
-
-Verify the deployment by navigating to your server address in
-your preferred browser. All the solution inside app folder.
-
-Please click on answers.ipnb
-
-```sh
-127.0.0.1:8888
-```
+After opening Jupyter Notebook; you will find an folder named as app; Please click on it and after that you will find the answers saved inside ->   answers.ipynb. 
+Click on it and run the solution
 
 ## License
 
+Copy Right Stayforlong 
 
   
