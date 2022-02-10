@@ -35,7 +35,7 @@ docker image ls
 ```
 Finally: Please run the command below to run jupyter Notebook and the find the solution copy inside the Docker image
 ```sh
-docker run -it -p 8888:8888 IMAGE_ID
+docker run -it -u 0 -p 8888:8888 IMAGE_ID --allow-root
 ```
 After running the docker image; you will see a link contains the local ip (127.0.0.1:8888) and token newly generated (token=....). 
 
