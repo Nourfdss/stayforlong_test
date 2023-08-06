@@ -5,3 +5,5 @@ def sum(a: int, b: int) -> int:
 if __name__ == '__main__':
     sumNum = sum(2,5)
     print(sumNum)
+
+#first commit
